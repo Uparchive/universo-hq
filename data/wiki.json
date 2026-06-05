@@ -1,0 +1,6 @@
+[
+  {"id":"lanca-celestial","tipo":"Artefato","nome":"Lança Celestial","descricao":"Arma de luz sólida criada para romper selos dimensionais.","relacionados":["aurelion","valdyr"]},
+  {"id":"olho-de-eternus","tipo":"Artefato","nome":"Olho de Eternus","descricao":"Relíquia capaz de registrar eventos fora da linha temporal.","relacionados":["epo-dawn"]},
+  {"id":"planeta-vyrion","tipo":"Planeta","nome":"Planeta Vyrion","descricao":"Mundo-santuário protegido por campos astrais e ordens guerreiras.","relacionados":["valdyr","aurelion"]},
+  {"id":"imperio-tartharus","tipo":"Facção","nome":"Império Tartharus","descricao":"Regime expansionista que domina rotas cósmicas por pactos e tecnologia antiga.","relacionados":["de-la-corte","kyro"]}
+]

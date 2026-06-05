@@ -1,0 +1,28 @@
+{
+  "id": "valdyr",
+  "nome": "Valdyr",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Defensor marcial de Vyrion e mestre de lâminas celestes.",
+  "poderPrincipal": "Espadas Astrais",
+  "poderes": [
+    "Lâminas de constelação",
+    "Postura guardiã",
+    "Corte gravitacional"
+  ],
+  "fraquezas": [
+    "Selos divinos",
+    "Venenos de sombra"
+  ],
+  "aparicoes": [
+    "aurelion-t1e01"
+  ],
+  "relacoes": [
+    {
+      "personagem": "aurelion",
+      "tipo": "Rival honrado"
+    }
+  ],
+  "wiki": [
+    "planeta-vyrion"
+  ]
+}

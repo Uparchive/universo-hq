@@ -1,0 +1,24 @@
+{
+  "id": "epo-dawn",
+  "nome": "Epo Dawn",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Exploradora temporal do primeiro amanhecer.",
+  "poderPrincipal": "Cronoluz",
+  "poderes": [
+    "Saltos temporais",
+    "Visões de linhas alternativas",
+    "Luz primordial"
+  ],
+  "fraquezas": [
+    "Paradoxos estáveis",
+    "Esgotamento temporal"
+  ],
+  "aparicoes": [],
+  "relacoes": [
+    {
+      "personagem": "kyro",
+      "tipo": "Parceiro científico"
+    }
+  ],
+  "wiki": []
+}

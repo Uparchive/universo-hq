@@ -1,0 +1,22 @@
+{
+  "id": "solarion-t1e01",
+  "serieId": "solarion",
+  "serieTitulo": "Solarion",
+  "temporada": 1,
+  "episodio": 1,
+  "titulo": "Solarion: O Vazio Cósmico",
+  "sinopse": "Solarion desperta diante de um silêncio impossível e descobre sinais do retorno de Aurelion.",
+  "descricao": "O Guardião Cósmico atravessa ruínas estelares para entender por que constelações inteiras deixaram de emitir som.",
+  "capa": "assets/img/placeholder-cover.svg",
+  "data": "2026-06-04",
+  "cronologia": 12,
+  "personagens": ["solarion", "aurelion"],
+  "tags": ["Cósmico", "Origem", "Mistério"],
+  "frames": [
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Solarion observa o vazio cósmico, onde até a luz parece hesitar."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Um selo dourado pulsa entre asteroides partidos."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "A assinatura de Aurelion retorna como uma cicatriz no firmamento."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "O Guardião concentra energia solar ancestral nas mãos."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "A batalha prometida começa antes mesmo do primeiro golpe."}
+  ]
+}

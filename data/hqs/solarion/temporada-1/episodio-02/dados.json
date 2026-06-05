@@ -1,0 +1,22 @@
+{
+  "id": "solarion-t1e02",
+  "serieId": "solarion",
+  "serieTitulo": "Solarion",
+  "temporada": 1,
+  "episodio": 2,
+  "titulo": "Solarion: Contra o Caos",
+  "sinopse": "O Guardião Cósmico enfrenta uma entidade que transforma memórias em armas.",
+  "descricao": "Depois do selo partido, o Agente do Caos usa lembranças de mundos destruídos para tentar quebrar Solarion.",
+  "capa": "assets/img/placeholder-cover.svg",
+  "data": "2026-06-11",
+  "cronologia": 14,
+  "personagens": ["solarion", "agente-do-caos"],
+  "tags": ["Batalha", "Caos", "Ação"],
+  "frames": [
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "As ruínas estelares começam a rir com vozes antigas."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "O Agente do Caos surge entre fragmentos de memória."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Solarion resiste à tempestade de lembranças roubadas."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Uma supernova contida corta a névoa entrópica."},
+    {"imagem": "assets/img/placeholder-cover.svg", "texto": "O caos recua, mas deixa uma profecia impossível."}
+  ]
+}

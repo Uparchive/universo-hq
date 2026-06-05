@@ -1,0 +1,33 @@
+{
+  "id": "aurelion",
+  "nome": "Aurelion",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Selador Divino que aprisiona ameaças celestiais.",
+  "poderPrincipal": "Selos Celestiais",
+  "poderes": [
+    "Barreiras sagradas",
+    "Prisão dimensional",
+    "Leitura de juramentos"
+  ],
+  "fraquezas": [
+    "Quebra de pactos antigos",
+    "Energia caótica"
+  ],
+  "aparicoes": [
+    "solarion-t1e01",
+    "aurelion-t1e01"
+  ],
+  "relacoes": [
+    {
+      "personagem": "solarion",
+      "tipo": "Rival cósmico"
+    },
+    {
+      "personagem": "valdyr",
+      "tipo": "Aliado instável"
+    }
+  ],
+  "wiki": [
+    "planeta-vyrion"
+  ]
+}
