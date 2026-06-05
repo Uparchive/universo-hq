@@ -2,13 +2,19 @@ const adminState = { type: 'hq' };
 
 function slugify(value) { return normalizeText(value).replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, ''); }
 function splitList(value) { return value.split(',').map(item => item.trim()).filter(Boolean); }
+function padEpisode(value) { return String(value || 1).padStart(2, '0'); }
+function defaultScenesFolder(serieId, season, episode) { return `cenas/${serieId}/temporada-${season || 1}/episodio-${padEpisode(episode)}`; }
 
 function buildHQ() {
   const title = document.getElementById('hq-title').value || 'Nova HQ';
   const serie = document.getElementById('hq-series').value || title;
-  const id = slugify(`${serie}-t${document.getElementById('hq-season').value || 1}e${document.getElementById('hq-episode').value || 1}`);
+  const season = Number(document.getElementById('hq-season').value || 1);
+  const episode = Number(document.getElementById('hq-episode').value || 1);
+  const serieId = slugify(serie);
+  const id = slugify(`${serie}-t${season}e${episode}`);
+  const pastaCenas = document.getElementById('hq-scenes-folder').value || defaultScenesFolder(serieId, season, episode);
   const frames = splitList(document.getElementById('hq-frames').value).map((image, index) => ({ imagem: image, texto: splitList(document.getElementById('hq-captions').value)[index] || '' }));
-  return { id, serieId: slugify(serie), serieTitulo: serie, temporada: Number(document.getElementById('hq-season').value || 1), episodio: Number(document.getElementById('hq-episode').value || 1), titulo: title, sinopse: document.getElementById('hq-synopsis').value, capa: document.getElementById('hq-cover').value || 'assets/img/placeholder-cover.svg', data: document.getElementById('hq-date').value, cronologia: Number(document.getElementById('hq-chronology').value || 0), personagens: splitList(document.getElementById('hq-characters').value), tags: splitList(document.getElementById('hq-tags').value), frames };
+  return { id, serieId, serieTitulo: serie, temporada: season, episodio: episode, titulo: title, sinopse: document.getElementById('hq-synopsis').value, capa: document.getElementById('hq-cover').value || 'assets/img/placeholder-cover.svg', data: document.getElementById('hq-date').value, cronologia: Number(document.getElementById('hq-chronology').value || 0), personagens: splitList(document.getElementById('hq-characters').value), tags: splitList(document.getElementById('hq-tags').value), pastaCenas, frames };
 }
 
 function buildCharacter() {
@@ -23,8 +29,11 @@ function renderAdmin() {
   const data = adminState.type === 'hq' ? buildHQ() : buildCharacter();
   document.getElementById('json-output').textContent = JSON.stringify(data, null, 2);
   document.getElementById('path-output').textContent = adminState.type === 'hq'
-    ? `data/hqs/${data.serieId}/temporada-${data.temporada}/episodio-${String(data.episodio).padStart(2, '0')}/dados.json`
-    : `data/personagens/${data.id}.json`;
+    ? `JSON: data/hqs/${data.serieId}/temporada-${data.temporada}/episodio-${padEpisode(data.episodio)}/dados.json`
+    : `JSON: data/personagens/${data.id}.json`;
+  document.getElementById('scenes-output').textContent = adminState.type === 'hq'
+    ? `Imagens: ${data.pastaCenas}/00.webp, ${data.pastaCenas}/01.webp, ${data.pastaCenas}/02.webp...`
+    : '';
 }
 
 function downloadJSON() {
