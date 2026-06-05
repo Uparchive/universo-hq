@@ -1,0 +1,26 @@
+[
+  {
+    "id": "solarion-vs-aurelion",
+    "titulo": "Solarion vs Aurelion",
+    "personagens": ["solarion", "aurelion"],
+    "descricao": "Conflito entre energia cósmica e selos divinos.",
+    "hqs": ["solarion-t1e01"],
+    "resultado": "Em andamento"
+  },
+  {
+    "id": "solarion-vs-agente-do-caos",
+    "titulo": "Solarion vs Agente do Caos",
+    "personagens": ["solarion", "agente-do-caos"],
+    "descricao": "Batalha contra a entropia viva nas ruínas estelares.",
+    "hqs": ["solarion-t1e02"],
+    "resultado": "Inconclusivo"
+  },
+  {
+    "id": "aurelion-vs-valdyr",
+    "titulo": "Aurelion vs Valdyr",
+    "personagens": ["aurelion", "valdyr"],
+    "descricao": "Duelo ritual para decidir o destino de Vyrion.",
+    "hqs": ["aurelion-t1e01"],
+    "resultado": "Vitória estratégica de Aurelion"
+  }
+]

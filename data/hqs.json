@@ -1,0 +1,53 @@
+[
+  {
+    "id": "solarion-t1e01",
+    "serieId": "solarion",
+    "serieTitulo": "Solarion",
+    "temporada": 1,
+    "episodio": 1,
+    "titulo": "Solarion: O Vazio Cósmico",
+    "sinopse": "Solarion desperta diante de um silêncio impossível e descobre sinais do retorno de Aurelion.",
+    "capa": "assets/img/placeholder-cover.svg",
+    "data": "2026-06-04",
+    "cronologia": 12,
+    "personagens": ["solarion", "aurelion"],
+    "tags": ["Cósmico", "Origem", "Mistério"],
+    "batalhas": ["solarion-vs-aurelion"],
+    "framesTotal": 5,
+    "dados": "data/hqs/solarion/temporada-1/episodio-01/dados.json"
+  },
+  {
+    "id": "solarion-t1e02",
+    "serieId": "solarion",
+    "serieTitulo": "Solarion",
+    "temporada": 1,
+    "episodio": 2,
+    "titulo": "Solarion: Contra o Caos",
+    "sinopse": "O Guardião Cósmico enfrenta uma entidade que transforma memórias em armas.",
+    "capa": "assets/img/placeholder-cover.svg",
+    "data": "2026-06-11",
+    "cronologia": 14,
+    "personagens": ["solarion", "agente-do-caos"],
+    "tags": ["Batalha", "Caos", "Ação"],
+    "batalhas": ["solarion-vs-agente-do-caos"],
+    "framesTotal": 5,
+    "dados": "data/hqs/solarion/temporada-1/episodio-02/dados.json"
+  },
+  {
+    "id": "aurelion-t1e01",
+    "serieId": "aurelion",
+    "serieTitulo": "Aurelion",
+    "temporada": 1,
+    "episodio": 1,
+    "titulo": "Aurelion: O Selador Divino",
+    "sinopse": "Antes da rivalidade, Aurelion sela uma fratura dimensional que ameaça Vyrion.",
+    "capa": "assets/img/placeholder-cover.svg",
+    "data": "2026-06-18",
+    "cronologia": 8,
+    "personagens": ["aurelion", "valdyr"],
+    "tags": ["Fantasia", "Divino", "Prelúdio"],
+    "batalhas": ["aurelion-vs-valdyr"],
+    "framesTotal": 5,
+    "dados": "data/hqs/aurelion/temporada-1/episodio-01/dados.json"
+  }
+]

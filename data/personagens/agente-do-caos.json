@@ -1,0 +1,17 @@
+{
+  "id": "agente-do-caos",
+  "nome": "Agente do Caos",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Entidade que espalha anomalias e distorce memórias.",
+  "poderPrincipal": "Entropia Viva",
+  "poderes": ["Distorção da realidade", "Clones de caos", "Armas mnemônicas"],
+  "fraquezas": ["Ordem absoluta", "Luz solar concentrada"],
+  "aparicoes": ["solarion-t1e02"],
+  "relacoes": [
+    {
+      "personagem": "solarion",
+      "tipo": "Alvo principal"
+    }
+  ],
+  "wiki": []
+}

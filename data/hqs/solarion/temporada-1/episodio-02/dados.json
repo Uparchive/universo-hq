@@ -1,0 +1,52 @@
+{
+  "id": "solarion-t1e02",
+  "serieId": "solarion",
+  "serieTitulo": "Solarion",
+  "temporada": 1,
+  "episodio": 2,
+  "titulo": "Solarion: Contra o Caos",
+  "sinopse": "O Guardião Cósmico enfrenta uma entidade que transforma memórias em armas.",
+  "descricao": "Depois do selo partido, o Agente do Caos usa lembranças de mundos destruídos para tentar quebrar Solarion.",
+  "capa": "assets/img/placeholder-cover.svg",
+  "data": "2026-06-11",
+  "cronologia": 14,
+  "personagens": ["solarion", "agente-do-caos"],
+  "tags": ["Batalha", "Caos", "Ação"],
+  "frames": [
+    {
+      "ordem": 0,
+      "arquivo": "00 - Introdução.svg",
+      "titulo": "00 - Introdução",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-02/frames/00 - Introdução.svg",
+      "texto": "As ruínas estelares começam a rir com vozes antigas."
+    },
+    {
+      "ordem": 1,
+      "arquivo": "01 - A Origem.svg",
+      "titulo": "01 - A Origem",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-02/frames/01 - A Origem.svg",
+      "texto": "O Agente do Caos surge entre fragmentos de memória."
+    },
+    {
+      "ordem": 2,
+      "arquivo": "02 - O Selo.svg",
+      "titulo": "02 - O Selo",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-02/frames/02 - O Selo.svg",
+      "texto": "Solarion resiste à tempestade de lembranças roubadas."
+    },
+    {
+      "ordem": 3,
+      "arquivo": "03 - Despertar.svg",
+      "titulo": "03 - Despertar",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-02/frames/03 - Despertar.svg",
+      "texto": "Uma supernova contida corta a névoa entrópica."
+    },
+    {
+      "ordem": 4,
+      "arquivo": "04 - Confronto.svg",
+      "titulo": "04 - Confronto",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-02/frames/04 - Confronto.svg",
+      "texto": "O caos recua, mas deixa uma profecia impossível."
+    }
+  ]
+}

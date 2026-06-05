@@ -1,0 +1,17 @@
+{
+  "id": "kyro",
+  "nome": "Kyro",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Tecnomante capaz de transformar órbitas em máquinas.",
+  "poderPrincipal": "Engenharia Orbital",
+  "poderes": ["Drones orbitais", "Campos magnéticos", "Forjas frias"],
+  "fraquezas": ["Sobrecarga solar", "Silêncio eletromagnético"],
+  "aparicoes": [],
+  "relacoes": [
+    {
+      "personagem": "epo-dawn",
+      "tipo": "Aliada"
+    }
+  ],
+  "wiki": []
+}

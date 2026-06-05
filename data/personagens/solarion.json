@@ -1,0 +1,25 @@
+{
+  "id": "solarion",
+  "nome": "Solarion",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Guardião Cósmico ligado ao núcleo solar primordial.",
+  "poderPrincipal": "Energia Solar Cósmica",
+  "poderes": [
+    "Manipulação solar",
+    "Voo interplanetário",
+    "Regeneração por luz estelar"
+  ],
+  "fraquezas": ["Eclipses artificiais", "Cristais de sombra"],
+  "aparicoes": ["solarion-t1e01", "solarion-t1e02"],
+  "relacoes": [
+    {
+      "personagem": "aurelion",
+      "tipo": "Rivalidade sagrada"
+    },
+    {
+      "personagem": "agente-do-caos",
+      "tipo": "Inimigo"
+    }
+  ],
+  "wiki": []
+}

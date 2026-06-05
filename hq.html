@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Leitor | Universo HQ</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/reader.css" />
+  </head>
+  <body class="reader-page">
+    <header class="app-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="Universo HQ"
+        /></a>
+        <div class="nav-links">
+          <a href="index.html">Biblioteca</a
+          ><a href="personagens.html">Personagens</a
+          ><a href="batalhas.html">Batalhas</a><a href="admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main class="container reader-shell">
+      <div class="reader-layout">
+        <section class="player">
+          <div id="stage" class="stage">
+            <img
+              id="frame-image"
+              src="assets/img/placeholder-cover.svg"
+              alt="Frame atual"
+            />
+            <div id="caption" class="caption"></div>
+          </div>
+          <div class="controls">
+            <div class="progress-wrap">
+              <div class="progress-meta">
+                <span id="counter">Frame 1 / 1</span
+                ><span id="progress-label">0% concluído</span>
+              </div>
+              <div class="progress" aria-label="Progresso da HQ">
+                <span id="progress-bar"></span>
+              </div>
+            </div>
+            <div class="control-row">
+              <button id="prev" class="btn ghost">⏮ Anterior</button
+              ><button id="play" class="btn primary">▶ Assistir HQ</button
+              ><button id="next" class="btn ghost">Próximo ⏭</button
+              ><button id="restart" class="btn ghost">↺ Reiniciar</button
+              ><button id="captions" class="btn ghost active">
+                💬 Legendas</button
+              ><button id="zoom" class="btn ghost">🔎 Zoom</button
+              ><button id="fullscreen" class="btn blue">⛶ Tela cheia</button
+              ><select
+                id="speed"
+                class="btn ghost"
+                aria-label="Velocidade do autoplay"
+              >
+                <option value="3600">Lento</option>
+                <option value="2600" selected>Normal</option>
+                <option value="1500">Rápido</option>
+              </select>
+            </div>
+          </div>
+        </section>
+        <aside class="reader-aside">
+          <div class="panel">
+            <span class="eyebrow" id="reader-meta">Carregando</span>
+            <h1 id="reader-title">Universo HQ</h1>
+            <p class="muted" id="reader-synopsis"></p>
+            <div id="tags" class="meta"></div>
+          </div>
+          <div class="panel">
+            <h3>Modos de exibição</h3>
+            <div class="mode-toggle">
+              <button class="btn ghost active" data-mode="movie">
+                Modo filme</button
+              ><button class="btn ghost" data-mode="read">Modo leitura</button
+              ><button class="btn ghost" data-mode="image">Só imagens</button>
+            </div>
+            <p class="muted">
+              Use setas, espaço, clique no frame ou swipe no celular.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/reader.js"></script>
+  </body>
+</html>

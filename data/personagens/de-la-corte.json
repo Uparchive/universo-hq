@@ -1,0 +1,17 @@
+{
+  "id": "de-la-corte",
+  "nome": "De La Corte",
+  "imagem": "assets/img/placeholder-character.svg",
+  "descricao": "Diplomata imperial que vence guerras antes que comecem.",
+  "poderPrincipal": "Influência Imperial",
+  "poderes": ["Manipulação política", "Contratos sombrios", "Rede de espiões"],
+  "fraquezas": ["Verdade pública", "Quebra de tratados"],
+  "aparicoes": [],
+  "relacoes": [
+    {
+      "personagem": "kyro",
+      "tipo": "Contato tecnológico"
+    }
+  ],
+  "wiki": []
+}

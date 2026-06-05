@@ -1,0 +1,52 @@
+{
+  "id": "solarion-t1e01",
+  "serieId": "solarion",
+  "serieTitulo": "Solarion",
+  "temporada": 1,
+  "episodio": 1,
+  "titulo": "Solarion: O Vazio Cósmico",
+  "sinopse": "Solarion desperta diante de um silêncio impossível e descobre sinais do retorno de Aurelion.",
+  "descricao": "O Guardião Cósmico atravessa ruínas estelares para entender por que constelações inteiras deixaram de emitir som.",
+  "capa": "assets/img/placeholder-cover.svg",
+  "data": "2026-06-04",
+  "cronologia": 12,
+  "personagens": ["solarion", "aurelion"],
+  "tags": ["Cósmico", "Origem", "Mistério"],
+  "frames": [
+    {
+      "ordem": 2,
+      "arquivo": "02 - O Selo.svg",
+      "titulo": "02 - O Selo",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-01/frames/02 - O Selo.svg",
+      "texto": "A assinatura de Aurelion retorna como uma cicatriz no firmamento."
+    },
+    {
+      "ordem": 0,
+      "arquivo": "00 - Introdução.svg",
+      "titulo": "00 - Introdução",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-01/frames/00 - Introdução.svg",
+      "texto": "Solarion observa o vazio cósmico, onde até a luz parece hesitar."
+    },
+    {
+      "ordem": 1,
+      "arquivo": "01 - A Origem.svg",
+      "titulo": "01 - A Origem",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-01/frames/01 - A Origem.svg",
+      "texto": "Um selo dourado pulsa entre asteroides partidos."
+    },
+    {
+      "ordem": 4,
+      "arquivo": "04 - Confronto.svg",
+      "titulo": "04 - Confronto",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-01/frames/04 - Confronto.svg",
+      "texto": "A batalha prometida começa antes mesmo do primeiro golpe."
+    },
+    {
+      "ordem": 3,
+      "arquivo": "03 - Despertar.svg",
+      "titulo": "03 - Despertar",
+      "imagem": "data/hqs/solarion/temporada-1/episodio-01/frames/03 - Despertar.svg",
+      "texto": "O Guardião concentra energia solar ancestral nas mãos."
+    }
+  ]
+}
