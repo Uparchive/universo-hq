@@ -2,6 +2,59 @@ const state = { hq: null, frame: 0, timer: null, speed: 2600, captions: true, mo
 
 const $ = selector => document.querySelector(selector);
 
+const SCENE_EXTENSIONS = ['webp', 'jpg', 'jpeg', 'png', 'avif', 'gif'];
+const MAX_AUTO_SCENES = 200;
+
+function padSceneNumber(value) {
+  return String(value).padStart(2, '0');
+}
+
+function defaultSceneFolder(hq) {
+  return `cenas/${hq.serieId}/temporada-${hq.temporada}/episodio-${padSceneNumber(hq.episodio)}`;
+}
+
+function normalizeFolderPath(path) {
+  return path.replace(/\/+$/, '');
+}
+
+function imageExists(src) {
+  return new Promise(resolve => {
+    const image = new Image();
+    image.onload = () => resolve(true);
+    image.onerror = () => resolve(false);
+    image.src = `${src}?v=${Date.now()}`;
+  });
+}
+
+async function findSceneImage(folder, sceneNumber) {
+  const basename = padSceneNumber(sceneNumber);
+  for (const extension of SCENE_EXTENSIONS) {
+    const src = `${folder}/${basename}.${extension}`;
+    if (await imageExists(src)) return src;
+  }
+  return null;
+}
+
+async function loadManualSceneFrames(hq) {
+  const folder = normalizeFolderPath(hq.pastaCenas || hq.cenasPath || defaultSceneFolder(hq));
+  const frames = [];
+
+  for (let index = 0; index < MAX_AUTO_SCENES; index += 1) {
+    const imagem = await findSceneImage(folder, index);
+    if (!imagem) break;
+    frames.push({
+      ...(hq.frames?.[index] || {}),
+      imagem,
+      texto: hq.frames?.[index]?.texto || ''
+    });
+  }
+
+  if (frames.length > 0) {
+    hq.frames = frames;
+    hq.pastaCenasResolvida = folder;
+  }
+}
+
 function updateReader() {
   const current = state.hq.frames[state.frame];
   $('#frame-image').style.opacity = '0';
@@ -55,6 +108,7 @@ async function initReader() {
   const index = await fetchJSON(UHPaths.hqs);
   const item = index.find(hq => hq.id === id) || index[0];
   state.hq = await fetchJSON(item.dados);
+  await loadManualSceneFrames(state.hq);
   document.title = `${state.hq.titulo} | Universo HQ`;
   $('#reader-title').textContent = state.hq.titulo;
   $('#reader-synopsis').textContent = state.hq.descricao || state.hq.sinopse;
