@@ -9,14 +9,8 @@
     "Voo interplanetário",
     "Regeneração por luz estelar"
   ],
-  "fraquezas": [
-    "Eclipses artificiais",
-    "Cristais de sombra"
-  ],
-  "aparicoes": [
-    "solarion-t1e01",
-    "solarion-t1e02"
-  ],
+  "fraquezas": ["Eclipses artificiais", "Cristais de sombra"],
+  "aparicoes": ["solarion-t1e01", "solarion-t1e02"],
   "relacoes": [
     {
       "personagem": "aurelion",

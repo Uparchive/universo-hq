@@ -1,1 +1,153 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Universo HQ | Biblioteca Cinematográfica</title><link rel="stylesheet" href="assets/css/base.css"></head><body><header class="app-header"><nav class="container nav"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="Universo HQ"></a><div class="nav-links"><a href="index.html">Biblioteca</a><a href="personagens.html">Personagens</a><a href="batalhas.html">Batalhas</a><a href="admin.html">Admin</a></div><div class="search"><input id="global-search" type="search" placeholder="Buscar HQ, personagem, tag ou série..."></div></nav></header><main><section class="hero"><div class="container hero-card"><div class="hero-content"><span class="eyebrow">Plataforma premium de HQs cinematográficas</span><h1>Universo HQ</h1><p class="muted">Séries, temporadas, episódios, batalhas épicas, cronologia oficial e uma enciclopédia expansível para personagens, planetas, artefatos, organizações, poderes e facções.</p><div class="actions"><a class="btn primary" href="#lancamentos">▶ Começar agora</a><a class="btn ghost" href="personagens.html">Explorar wiki</a></div></div></div></section><section class="section"><div class="container kpi"><div class="panel"><strong>3</strong><span class="muted">episódios iniciais</span></div><div class="panel"><strong>7</strong><span class="muted">personagens</span></div><div class="panel"><strong>3</strong><span class="muted">batalhas</span></div><div class="panel"><strong>4</strong><span class="muted">itens de wiki</span></div></div></section><section id="lancamentos" class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Streaming</span><h2>Lançamentos</h2></div></div><div id="releases" class="rail"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Temporadas</span><h2>Séries do Universo</h2></div></div><div id="series" class="grid"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Linha temporal</span><h2>Cronologia do Universo</h2></div></div><div id="timeline" class="rail"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">LocalStorage</span><h2>Minhas HQs Favoritas</h2></div></div><div id="favorites" class="rail"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Confrontos</span><h2>Batalhas em destaque</h2></div><a class="btn ghost" href="batalhas.html">Ver todas</a></div><div id="battles-preview" class="grid"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Wiki expansível</span><h2>Enciclopédia do Universo</h2></div></div><div id="wiki-preview" class="grid"></div></div></section><section class="section"><div class="container"><div class="section-head"><div><span class="eyebrow">Catálogo completo</span><h2>Todas as HQs</h2></div></div><div id="all-hqs" class="grid"></div></div></section></main><footer class="footer"><div class="container">Universo HQ · HTML, CSS, JavaScript puro e JSON para GitHub Pages.</div></footer><script src="assets/js/data.js"></script><script src="assets/js/favorites.js"></script><script src="assets/js/app.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Universo HQ | Biblioteca Cinematográfica</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="Universo HQ"
+        /></a>
+        <div class="nav-links">
+          <a href="index.html">Biblioteca</a
+          ><a href="personagens.html">Personagens</a
+          ><a href="batalhas.html">Batalhas</a><a href="admin.html">Admin</a>
+        </div>
+        <div class="search">
+          <input
+            id="global-search"
+            type="search"
+            placeholder="Buscar HQ, personagem, tag ou série..."
+          />
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container hero-card">
+          <div class="hero-content">
+            <span class="eyebrow"
+              >Plataforma premium de HQs cinematográficas</span
+            >
+            <h1>Universo HQ</h1>
+            <p class="muted">
+              Séries, temporadas, episódios, batalhas épicas, cronologia oficial
+              e uma enciclopédia expansível para personagens, planetas,
+              artefatos, organizações, poderes e facções.
+            </p>
+            <div class="actions">
+              <a class="btn primary" href="#lancamentos">▶ Começar agora</a
+              ><a class="btn ghost" href="personagens.html">Explorar wiki</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container kpi">
+          <div class="panel">
+            <strong>3</strong><span class="muted">episódios iniciais</span>
+          </div>
+          <div class="panel">
+            <strong>7</strong><span class="muted">personagens</span>
+          </div>
+          <div class="panel">
+            <strong>3</strong><span class="muted">batalhas</span>
+          </div>
+          <div class="panel">
+            <strong>4</strong><span class="muted">itens de wiki</span>
+          </div>
+        </div>
+      </section>
+      <section id="lancamentos" class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Streaming</span>
+              <h2>Lançamentos</h2>
+            </div>
+          </div>
+          <div id="releases" class="rail"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Temporadas</span>
+              <h2>Séries do Universo</h2>
+            </div>
+          </div>
+          <div id="series" class="grid"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Linha temporal</span>
+              <h2>Cronologia do Universo</h2>
+            </div>
+          </div>
+          <div id="timeline" class="rail"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">LocalStorage</span>
+              <h2>Minhas HQs Favoritas</h2>
+            </div>
+          </div>
+          <div id="favorites" class="rail"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Confrontos</span>
+              <h2>Batalhas em destaque</h2>
+            </div>
+            <a class="btn ghost" href="batalhas.html">Ver todas</a>
+          </div>
+          <div id="battles-preview" class="grid"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Wiki expansível</span>
+              <h2>Enciclopédia do Universo</h2>
+            </div>
+          </div>
+          <div id="wiki-preview" class="grid"></div>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container">
+          <div class="section-head">
+            <div>
+              <span class="eyebrow">Catálogo completo</span>
+              <h2>Todas as HQs</h2>
+            </div>
+          </div>
+          <div id="all-hqs" class="grid"></div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        Universo HQ · HTML, CSS, JavaScript puro e JSON para GitHub Pages.
+      </div>
+    </footer>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/favorites.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

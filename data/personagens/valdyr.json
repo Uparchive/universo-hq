@@ -9,20 +9,13 @@
     "Postura guardiã",
     "Corte gravitacional"
   ],
-  "fraquezas": [
-    "Selos divinos",
-    "Venenos de sombra"
-  ],
-  "aparicoes": [
-    "aurelion-t1e01"
-  ],
+  "fraquezas": ["Selos divinos", "Venenos de sombra"],
+  "aparicoes": ["aurelion-t1e01"],
   "relacoes": [
     {
       "personagem": "aurelion",
       "tipo": "Rival honrado"
     }
   ],
-  "wiki": [
-    "planeta-vyrion"
-  ]
+  "wiki": ["planeta-vyrion"]
 }

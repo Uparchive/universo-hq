@@ -1,1 +1,158 @@
-<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Admin | Universo HQ</title><link rel="stylesheet" href="assets/css/base.css"><link rel="stylesheet" href="assets/css/admin.css"></head><body><header class="app-header"><nav class="container nav"><a class="brand" href="index.html"><img src="assets/img/logo.svg" alt="Universo HQ"></a><div class="nav-links"><a href="index.html">Biblioteca</a><a href="personagens.html">Personagens</a><a href="batalhas.html">Batalhas</a><a href="admin.html">Admin</a></div></nav></header><main><section class="hero"><div class="container"><span class="eyebrow">Painel local</span><h1>Administração</h1><p class="muted">Gere JSONs para HQs com temporadas, episódios, cronologia e narrativa por frame, ou crie dossiês de personagens. Em GitHub Pages o salvamento é feito via download/cópia do arquivo gerado.</p></div></section><section class="section"><div class="container split"><div class="panel"><div class="tabs"><button class="btn tab active" data-tab="hq">Criar HQ</button><button class="btn tab" data-tab="character">Criar personagem</button></div><form id="hq-form" class="form-grid"><div class="field"><label>Título</label><input id="hq-title" value="Nova Saga"></div><div class="field"><label>Série</label><input id="hq-series" value="Solarion"></div><div class="field"><label>Temporada</label><input id="hq-season" type="number" value="1"></div><div class="field"><label>Episódio</label><input id="hq-episode" type="number" value="1"></div><div class="field"><label>Data</label><input id="hq-date" type="date" value="2026-06-04"></div><div class="field"><label>Cronologia</label><input id="hq-chronology" type="number" value="1"></div><div class="field full"><label>Sinopse</label><textarea id="hq-synopsis">Sinopse curta da HQ cinematográfica.</textarea></div><div class="field full"><label>Capa</label><input id="hq-cover" value="assets/img/placeholder-cover.svg"></div><div class="field"><label>Personagens CSV</label><input id="hq-characters" value="solarion,aurelion"></div><div class="field"><label>Tags CSV</label><input id="hq-tags" value="Batalha,Cósmico"></div><div class="field full"><label>Frames CSV</label><textarea id="hq-frames">assets/img/placeholder-cover.svg,assets/img/placeholder-cover.svg</textarea></div><div class="field full"><label>Narrativas CSV</label><textarea id="hq-captions">Texto do frame 1,Texto do frame 2</textarea></div></form><form id="character-form" class="form-grid" style="display:none"><div class="field"><label>Nome</label><input id="char-name" value="Novo Personagem"></div><div class="field"><label>Poder principal</label><input id="char-main-power" value="Energia Cósmica"></div><div class="field full"><label>Imagem</label><input id="char-image" value="assets/img/placeholder-character.svg"></div><div class="field full"><label>Descrição</label><textarea id="char-description">Descrição completa do personagem.</textarea></div><div class="field"><label>Poderes CSV</label><input id="char-powers" value="Poder 1,Poder 2"></div><div class="field"><label>Fraquezas CSV</label><input id="char-weaknesses" value="Fraqueza 1,Fraqueza 2"></div><div class="field"><label>Aparições CSV</label><input id="char-appearances" value="solarion-t1e01"></div><div class="field"><label>Relações CSV</label><input id="char-relations" value="solarion,aurelion"></div></form></div><aside class="panel"><span class="eyebrow">Arquivo sugerido</span><p id="path-output" class="muted"></p><pre id="json-output" class="output"></pre><div class="actions"><button id="copy-json" class="btn primary">Copiar JSON</button><button id="download-json" class="btn blue">Baixar JSON</button></div></aside></div></section></main><script src="assets/js/data.js"></script><script src="assets/js/admin.js"></script></body></html>
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Admin | Universo HQ</title>
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/admin.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <nav class="container nav">
+        <a class="brand" href="index.html"
+          ><img src="assets/img/logo.svg" alt="Universo HQ"
+        /></a>
+        <div class="nav-links">
+          <a href="index.html">Biblioteca</a
+          ><a href="personagens.html">Personagens</a
+          ><a href="batalhas.html">Batalhas</a><a href="admin.html">Admin</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <span class="eyebrow">Painel local</span>
+          <h1>Administração</h1>
+          <p class="muted">
+            Gere JSONs para HQs com temporadas, episódios, cronologia e
+            narrativa por frame. Os frames podem usar nomes como “00 -
+            Introdução.svg” e “01 - A Origem.svg”; a numeração inicial define a
+            ordem no player. Em GitHub Pages o salvamento é feito via
+            download/cópia do arquivo gerado.
+          </p>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container split">
+          <div class="panel">
+            <div class="tabs">
+              <button class="btn tab active" data-tab="hq">Criar HQ</button
+              ><button class="btn tab" data-tab="character">
+                Criar personagem
+              </button>
+            </div>
+            <form id="hq-form" class="form-grid">
+              <div class="field">
+                <label>Título</label><input id="hq-title" value="Nova Saga" />
+              </div>
+              <div class="field">
+                <label>Série</label><input id="hq-series" value="Solarion" />
+              </div>
+              <div class="field">
+                <label>Temporada</label
+                ><input id="hq-season" type="number" value="1" />
+              </div>
+              <div class="field">
+                <label>Episódio</label
+                ><input id="hq-episode" type="number" value="1" />
+              </div>
+              <div class="field">
+                <label>Data</label
+                ><input id="hq-date" type="date" value="2026-06-04" />
+              </div>
+              <div class="field">
+                <label>Cronologia</label
+                ><input id="hq-chronology" type="number" value="1" />
+              </div>
+              <div class="field full">
+                <label>Sinopse</label
+                ><textarea id="hq-synopsis">
+Sinopse curta da HQ cinematográfica.</textarea
+                >
+              </div>
+              <div class="field full">
+                <label>Capa</label
+                ><input
+                  id="hq-cover"
+                  value="assets/img/placeholder-cover.svg"
+                />
+              </div>
+              <div class="field">
+                <label>Personagens CSV</label
+                ><input id="hq-characters" value="solarion,aurelion" />
+              </div>
+              <div class="field">
+                <label>Tags CSV</label
+                ><input id="hq-tags" value="Batalha,Cósmico" />
+              </div>
+              <div class="field full">
+                <label>Frames CSV</label
+                ><textarea id="hq-frames">
+data/hqs/solarion/temporada-1/episodio-01/frames/00 - Introdução.svg,data/hqs/solarion/temporada-1/episodio-01/frames/01 - A Origem.svg</textarea
+                >
+              </div>
+              <div class="field full">
+                <label>Narrativas CSV</label
+                ><textarea id="hq-captions">
+Texto do frame 00,Texto do frame 01</textarea
+                >
+              </div>
+            </form>
+            <form id="character-form" class="form-grid" style="display: none">
+              <div class="field">
+                <label>Nome</label
+                ><input id="char-name" value="Novo Personagem" />
+              </div>
+              <div class="field">
+                <label>Poder principal</label
+                ><input id="char-main-power" value="Energia Cósmica" />
+              </div>
+              <div class="field full">
+                <label>Imagem</label
+                ><input
+                  id="char-image"
+                  value="assets/img/placeholder-character.svg"
+                />
+              </div>
+              <div class="field full">
+                <label>Descrição</label
+                ><textarea id="char-description">
+Descrição completa do personagem.</textarea
+                >
+              </div>
+              <div class="field">
+                <label>Poderes CSV</label
+                ><input id="char-powers" value="Poder 1,Poder 2" />
+              </div>
+              <div class="field">
+                <label>Fraquezas CSV</label
+                ><input id="char-weaknesses" value="Fraqueza 1,Fraqueza 2" />
+              </div>
+              <div class="field">
+                <label>Aparições CSV</label
+                ><input id="char-appearances" value="solarion-t1e01" />
+              </div>
+              <div class="field">
+                <label>Relações CSV</label
+                ><input id="char-relations" value="solarion,aurelion" />
+              </div>
+            </form>
+          </div>
+          <aside class="panel">
+            <span class="eyebrow">Arquivo sugerido</span>
+            <p id="path-output" class="muted"></p>
+            <pre id="json-output" class="output"></pre>
+            <div class="actions">
+              <button id="copy-json" class="btn primary">Copiar JSON</button
+              ><button id="download-json" class="btn blue">Baixar JSON</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+    </main>
+    <script src="assets/js/data.js"></script>
+    <script src="assets/js/admin.js"></script>
+  </body>
+</html>

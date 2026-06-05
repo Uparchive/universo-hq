@@ -9,14 +9,8 @@
     "Prisão dimensional",
     "Leitura de juramentos"
   ],
-  "fraquezas": [
-    "Quebra de pactos antigos",
-    "Energia caótica"
-  ],
-  "aparicoes": [
-    "solarion-t1e01",
-    "aurelion-t1e01"
-  ],
+  "fraquezas": ["Quebra de pactos antigos", "Energia caótica"],
+  "aparicoes": ["solarion-t1e01", "aurelion-t1e01"],
   "relacoes": [
     {
       "personagem": "solarion",
@@ -27,7 +21,5 @@
       "tipo": "Aliado instável"
     }
   ],
-  "wiki": [
-    "planeta-vyrion"
-  ]
+  "wiki": ["planeta-vyrion"]
 }

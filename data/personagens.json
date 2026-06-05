@@ -1,9 +1,58 @@
 [
-  {"id":"solarion","nome":"Solarion","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Guardião Cósmico que manipula energia solar ancestral.","poderPrincipal":"Energia Solar Cósmica","dados":"data/personagens/solarion.json"},
-  {"id":"aurelion","nome":"Aurelion","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Selador Divino capaz de aprisionar entidades celestiais.","poderPrincipal":"Selos Celestiais","dados":"data/personagens/aurelion.json"},
-  {"id":"agente-do-caos","nome":"Agente do Caos","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Entidade estratégica que converte desordem em domínio.","poderPrincipal":"Entropia Viva","dados":"data/personagens/agente-do-caos.json"},
-  {"id":"epo-dawn","nome":"Epo Dawn","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Exploradora temporal conectada ao primeiro amanhecer do universo.","poderPrincipal":"Cronoluz","dados":"data/personagens/epo-dawn.json"},
-  {"id":"valdyr","nome":"Valdyr","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Senhor das lâminas celestes e antigo defensor de Vyrion.","poderPrincipal":"Espadas Astrais","dados":"data/personagens/valdyr.json"},
-  {"id":"kyro","nome":"Kyro","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Tecnomante das órbitas frias.","poderPrincipal":"Engenharia Orbital","dados":"data/personagens/kyro.json"},
-  {"id":"de-la-corte","nome":"De La Corte","imagem":"assets/img/placeholder-character.svg","descricaoCurta":"Diplomata sombrio de impérios esquecidos.","poderPrincipal":"Influência Imperial","dados":"data/personagens/de-la-corte.json"}
+  {
+    "id": "solarion",
+    "nome": "Solarion",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Guardião Cósmico que manipula energia solar ancestral.",
+    "poderPrincipal": "Energia Solar Cósmica",
+    "dados": "data/personagens/solarion.json"
+  },
+  {
+    "id": "aurelion",
+    "nome": "Aurelion",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Selador Divino capaz de aprisionar entidades celestiais.",
+    "poderPrincipal": "Selos Celestiais",
+    "dados": "data/personagens/aurelion.json"
+  },
+  {
+    "id": "agente-do-caos",
+    "nome": "Agente do Caos",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Entidade estratégica que converte desordem em domínio.",
+    "poderPrincipal": "Entropia Viva",
+    "dados": "data/personagens/agente-do-caos.json"
+  },
+  {
+    "id": "epo-dawn",
+    "nome": "Epo Dawn",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Exploradora temporal conectada ao primeiro amanhecer do universo.",
+    "poderPrincipal": "Cronoluz",
+    "dados": "data/personagens/epo-dawn.json"
+  },
+  {
+    "id": "valdyr",
+    "nome": "Valdyr",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Senhor das lâminas celestes e antigo defensor de Vyrion.",
+    "poderPrincipal": "Espadas Astrais",
+    "dados": "data/personagens/valdyr.json"
+  },
+  {
+    "id": "kyro",
+    "nome": "Kyro",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Tecnomante das órbitas frias.",
+    "poderPrincipal": "Engenharia Orbital",
+    "dados": "data/personagens/kyro.json"
+  },
+  {
+    "id": "de-la-corte",
+    "nome": "De La Corte",
+    "imagem": "assets/img/placeholder-character.svg",
+    "descricaoCurta": "Diplomata sombrio de impérios esquecidos.",
+    "poderPrincipal": "Influência Imperial",
+    "dados": "data/personagens/de-la-corte.json"
+  }
 ]

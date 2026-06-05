@@ -13,10 +13,40 @@
   "personagens": ["aurelion", "valdyr"],
   "tags": ["Fantasia", "Divino", "Prelúdio"],
   "frames": [
-    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Vyrion treme sob uma fratura aberta no céu."},
-    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Aurelion invoca selos celestiais diante do conselho astral."},
-    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Valdyr desafia o direito divino com lâminas de constelação."},
-    {"imagem": "assets/img/placeholder-cover.svg", "texto": "O duelo desenha runas no ar como trovões silenciosos."},
-    {"imagem": "assets/img/placeholder-cover.svg", "texto": "Aurelion sela a fratura e conquista uma paz temporária."}
+    {
+      "ordem": 0,
+      "arquivo": "00 - Introdução.svg",
+      "titulo": "00 - Introdução",
+      "imagem": "data/hqs/aurelion/temporada-1/episodio-01/frames/00 - Introdução.svg",
+      "texto": "Vyrion treme sob uma fratura aberta no céu."
+    },
+    {
+      "ordem": 1,
+      "arquivo": "01 - A Origem.svg",
+      "titulo": "01 - A Origem",
+      "imagem": "data/hqs/aurelion/temporada-1/episodio-01/frames/01 - A Origem.svg",
+      "texto": "Aurelion invoca selos celestiais diante do conselho astral."
+    },
+    {
+      "ordem": 2,
+      "arquivo": "02 - O Selo.svg",
+      "titulo": "02 - O Selo",
+      "imagem": "data/hqs/aurelion/temporada-1/episodio-01/frames/02 - O Selo.svg",
+      "texto": "Valdyr desafia o direito divino com lâminas de constelação."
+    },
+    {
+      "ordem": 3,
+      "arquivo": "03 - Despertar.svg",
+      "titulo": "03 - Despertar",
+      "imagem": "data/hqs/aurelion/temporada-1/episodio-01/frames/03 - Despertar.svg",
+      "texto": "O duelo desenha runas no ar como trovões silenciosos."
+    },
+    {
+      "ordem": 4,
+      "arquivo": "04 - Confronto.svg",
+      "titulo": "04 - Confronto",
+      "imagem": "data/hqs/aurelion/temporada-1/episodio-01/frames/04 - Confronto.svg",
+      "texto": "Aurelion sela a fratura e conquista uma paz temporária."
+    }
   ]
 }

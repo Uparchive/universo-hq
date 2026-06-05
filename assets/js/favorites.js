@@ -1,8 +1,11 @@
-const FAVORITES_KEY = 'universoHQ:favorites';
+const FAVORITES_KEY = "universoHQ:favorites";
 
 function getFavorites() {
-  try { return JSON.parse(localStorage.getItem(FAVORITES_KEY)) || []; }
-  catch { return []; }
+  try {
+    return JSON.parse(localStorage.getItem(FAVORITES_KEY)) || [];
+  } catch {
+    return [];
+  }
 }
 
 function saveFavorites(ids) {
@@ -15,7 +18,9 @@ function isFavorite(id) {
 
 function toggleFavorite(id) {
   const favorites = getFavorites();
-  const next = favorites.includes(id) ? favorites.filter(item => item !== id) : [...favorites, id];
+  const next = favorites.includes(id)
+    ? favorites.filter((item) => item !== id)
+    : [...favorites, id];
   saveFavorites(next);
   return next.includes(id);
 }

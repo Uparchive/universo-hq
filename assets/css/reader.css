@@ -1,1 +1,146 @@
-.reader-page{background:#020305}.reader-shell{padding:26px 0 42px}.reader-layout{display:grid;grid-template-columns:1fr 330px;gap:18px}.player{border:1px solid #ffffff14;background:#050608;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);position:relative}.stage{position:relative;min-height:58vh;background:#000;display:grid;place-items:center;cursor:pointer}.stage img{max-height:76vh;width:100%;height:100%;object-fit:contain;transition:transform .5s ease,opacity .35s ease}.stage.zoom img{transform:scale(1.13)}.caption{position:absolute;left:22px;right:22px;bottom:22px;background:linear-gradient(180deg,#0000,#000c);padding:42px 18px 18px;border-radius:18px;font-size:1.1rem;line-height:1.5}.caption.hidden{display:none}.controls{padding:18px;background:linear-gradient(180deg,#090d15,#050608)}.progress-wrap{display:grid;gap:8px;margin-bottom:14px}.progress-meta{display:flex;justify-content:space-between;color:var(--muted);font-weight:700}.progress{height:12px;background:#ffffff16;border-radius:999px;overflow:hidden}.progress span{display:block;height:100%;width:0;background:linear-gradient(90deg,#d6a84f,#0b5cff);transition:width .3s}.control-row{display:flex;gap:10px;flex-wrap:wrap}.reader-aside{display:grid;gap:18px;align-content:start}.mode-toggle{display:flex;gap:8px}.mode-toggle .active{background:#ffd166;color:#111}.cinema .app-header,.cinema .reader-aside{opacity:0;pointer-events:none}.cinema .reader-layout{grid-template-columns:1fr}.cinema .player{border-radius:0;min-height:100vh}.cinema .stage{min-height:calc(100vh - 150px)}.autoplay-clean .controls{opacity:0;transition:.3s}.autoplay-clean .player:hover .controls{opacity:1}@media(max-width:980px){.reader-layout{grid-template-columns:1fr}.reader-aside{grid-template-columns:1fr 1fr}}@media(max-width:620px){.reader-aside{grid-template-columns:1fr}.control-row .btn{flex:1}.stage{min-height:48vh}.caption{font-size:.98rem;left:10px;right:10px;bottom:10px}}
+.reader-page {
+  background: #020305;
+}
+.reader-shell {
+  padding: 26px 0 42px;
+}
+.reader-layout {
+  display: grid;
+  grid-template-columns: 1fr 330px;
+  gap: 18px;
+}
+.player {
+  border: 1px solid #ffffff14;
+  background: #050608;
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  position: relative;
+}
+.stage {
+  position: relative;
+  min-height: 58vh;
+  background: #000;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+}
+.stage img {
+  max-height: 76vh;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition:
+    transform 0.5s ease,
+    opacity 0.35s ease;
+}
+.stage.zoom img {
+  transform: scale(1.13);
+}
+.caption {
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 22px;
+  background: linear-gradient(180deg, #0000, #000c);
+  padding: 42px 18px 18px;
+  border-radius: 18px;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+.caption.hidden {
+  display: none;
+}
+.controls {
+  padding: 18px;
+  background: linear-gradient(180deg, #090d15, #050608);
+}
+.progress-wrap {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+.progress-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-weight: 700;
+}
+.progress {
+  height: 12px;
+  background: #ffffff16;
+  border-radius: 999px;
+  overflow: hidden;
+}
+.progress span {
+  display: block;
+  height: 100%;
+  width: 0;
+  background: linear-gradient(90deg, #d6a84f, #0b5cff);
+  transition: width 0.3s;
+}
+.control-row {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.reader-aside {
+  display: grid;
+  gap: 18px;
+  align-content: start;
+}
+.mode-toggle {
+  display: flex;
+  gap: 8px;
+}
+.mode-toggle .active {
+  background: #ffd166;
+  color: #111;
+}
+.cinema .app-header,
+.cinema .reader-aside {
+  opacity: 0;
+  pointer-events: none;
+}
+.cinema .reader-layout {
+  grid-template-columns: 1fr;
+}
+.cinema .player {
+  border-radius: 0;
+  min-height: 100vh;
+}
+.cinema .stage {
+  min-height: calc(100vh - 150px);
+}
+.autoplay-clean .controls {
+  opacity: 0;
+  transition: 0.3s;
+}
+.autoplay-clean .player:hover .controls {
+  opacity: 1;
+}
+@media (max-width: 980px) {
+  .reader-layout {
+    grid-template-columns: 1fr;
+  }
+  .reader-aside {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .reader-aside {
+    grid-template-columns: 1fr;
+  }
+  .control-row .btn {
+    flex: 1;
+  }
+  .stage {
+    min-height: 48vh;
+  }
+  .caption {
+    font-size: 0.98rem;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+  }
+}
